@@ -1,0 +1,1 @@
+photloc = uigetdir()
