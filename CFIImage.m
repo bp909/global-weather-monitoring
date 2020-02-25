@@ -5,7 +5,7 @@ dir_B = uigetdir('C:\Users\brain\MATLAB\Projects\weather-watcher\resources\Photo
 
 lmaname = fullfile(lmapat,lmafil);
 lmachan = imread(lmaname);
-
+%lmachan = lmachan(1600:2000,1600:2000);
 thresh_RL = 153;
 thresh_RS = 50;
 thresh_GL = 116;
@@ -24,21 +24,27 @@ for i = 1:filecount
     CHAN_R = imread(fullfile(dir_R,sprintf('CHAN_R%u.jpg',i)));
     CHAN_G = imread(fullfile(dir_G,sprintf('CHAN_G%u.jpg',i)));
     CHAN_B = imread(fullfile(dir_B,sprintf('CHAN_B%u.jpg',i)));
+%     CHAN_R = CHAN_R(1600:2000,1600:2000);
+%     CHAN_G = CHAN_G(1600:2000,1600:2000);
+%     CHAN_B = CHAN_B(1600:2000,1600:2000);
     GR(:,:,i) = CloudSepLMANaN(CHAN_R,lmachan,thresh_RL,thresh_RS);
     GG(:,:,i) = CloudSepLMANaN(CHAN_G,lmachan,thresh_GL,thresh_GS);
     GB(:,:,i) = CloudSepLMANaN(CHAN_B,lmachan,thresh_BL,thresh_BS);
 end
-
+%figure;
+%imshow(GR(:,:,2),[0,255])
 res_R = nanmean(GR,3);
 res_G = nanmean(GG,3);
 res_B = nanmean(GB,3);
 figure;
-imshow(res_R)
+imshow(res_R./255)
 figure;
-imshow(res_G)
+imshow(res_G./255)
 figure;
-imshow(res_B)
-
+imshow(res_B./255)
+res_RGB = RGBcreator(res_R/255,res_G/255,res_B/255);
+figure;
+imshow(res_RGB)
 
 
 
