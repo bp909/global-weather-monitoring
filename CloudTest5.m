@@ -64,6 +64,8 @@ for h=1:3                        %Repeat program for each colour
     axis square
     hold on
 end
+res_RGB = RGBcreator(Red,Green,Blue);
+imshow(res_RGB)
 clc
 disp('Complete')
 disp(' ')

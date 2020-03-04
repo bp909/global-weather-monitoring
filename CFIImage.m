@@ -38,13 +38,17 @@ res_G = nanmean(GG,3);
 res_B = nanmean(GB,3);
 figure;
 imshow(res_R./255)
+imwrite(res_R./255, 'avgim_R.png')
 figure;
 imshow(res_G./255)
+imwrite(res_G./255, 'avgim_G.png')
 figure;
 imshow(res_B./255)
+imwrite(res_B./255, 'avgim_B.png')
 res_RGB = RGBcreator(res_R/255,res_G/255,res_B/255);
 figure;
 imshow(res_RGB)
+imwrite(res_RGB, 'avgim_RGB.png')
 
 
 

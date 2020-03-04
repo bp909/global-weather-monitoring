@@ -49,9 +49,9 @@ threshmean_B = zeros([imagesiz_X imagesiz_Y]);
 
 for j = 1:imagesiz_X
     for k = 1:imagesiz_Y
-        threshmean_R(j,k) = mean(nonzeros(GR(j,k,:)));
-        threshmean_G(j,k) = mean(nonzeros(GG(j,k,:)));
-        threshmean_B(j,k) = mean(nonzeros(GB(j,k,:)));
+        threshmean_R(j,k) = nanmean(nonzeros(GR(j,k,:)));
+        threshmean_G(j,k) = nanmean(nonzeros(GG(j,k,:)));
+        threshmean_B(j,k) = nanmean(nonzeros(GB(j,k,:)));
     end
 end
 
