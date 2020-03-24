@@ -75,11 +75,13 @@ threshmean_G = mode(GG,3); %min(GG,[],3,'omitnan');
 threshmean_B = mode(GB,3); %min(GB,[],3,'omitnan');
 figure;
 imshow(threshmean_R/255)
+imwrite(threshmean_R/255, 'pivelmodetest_R.jpg')
 figure;
 imshow(threshmean_G/255)
+imwrite(threshmean_G/255, 'pivelmodetest_G.jpg')
 figure;
 imshow(threshmean_B/255)
-
+imwrite(threshmean_B/255, 'pivelmodetest_B.jpg')
 res_RGB = RGBcreator(threshmean_R/255,threshmean_G/255,threshmean_B/255);
 figure;
 imshow(res_RGB)
