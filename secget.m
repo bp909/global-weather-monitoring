@@ -7,5 +7,5 @@ lmaname = fullfile(lmapat,lmafil);
 lmachan = imread(lmaname);
 imshow(redchan)
 figure;
-redchancut = redchan(700:2250,1750:2800);
+redchancut = redchan(750:1100,2600:3000,:);
 imshow(redchancut)
