@@ -75,12 +75,6 @@ fin_R = zeros([imagesiz_X imagesiz_Y]);
 fin_G = zeros([imagesiz_X imagesiz_Y]);
 fin_B = zeros([imagesiz_X imagesiz_Y]);
 
-for i = 1:3712
-    
-    
-    
-end
-
 threshmean_R = mode(GR,3); %min(GR,[],3,'omitnan');
 threshmean_G = mode(GG,3); %min(GG,[],3,'omitnan');
 threshmean_B = mode(GB,3); %min(GB,[],3,'omitnan');
