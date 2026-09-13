@@ -1,5 +1,5 @@
 %%integrity check
-
+% checks if there's any days where the files don't exist
 dir_R = uigetdir('E:\','Choose your Red root folder');
 Rdir = dir(dir_R);
 [lodfil,lodpat] = uigetfile('*','Choose a list of dates');
