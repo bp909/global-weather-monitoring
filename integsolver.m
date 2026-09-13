@@ -1,4 +1,5 @@
 %% integsolver
+% for any corrupt dates replace them with a blank file
 
 gg = zeros([3712 3712]);
 for i = 1:length(corruptdates)
