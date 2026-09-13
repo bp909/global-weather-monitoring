@@ -1,3 +1,4 @@
+% Calculating more errors
 mean15gr = reshape(mean15g,[1,3]);
 mean15ger = reshape(mean15ge,[1,3]);
 mean15rr = reshape(mean15r,[1,3]);
