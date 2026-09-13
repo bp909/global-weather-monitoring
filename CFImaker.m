@@ -1,4 +1,5 @@
 function [mode_R, mode_G, mode_B, std_R, std_G, std_B] = CFImaker(chan_R,chan_G,chan_B)
+    % function that calculates a cloud free image given a sequence of multiple images
     chan_R(chan_R == 0) = NaN;
     chan_G(chan_G == 0) = NaN;
     chan_B(chan_B == 0) = NaN;
