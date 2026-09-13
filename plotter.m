@@ -1,3 +1,5 @@
+% Plotting vegetation coverage and cloud coverage (calculated by partner).
+
 x04 = 347/14;
 x05 = x04 + 365/14;
 x06 = x05 + 365/14;
