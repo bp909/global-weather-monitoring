@@ -1,3 +1,4 @@
+% this is a test of EVI for the system rather than NDVI
 [redfil,redpat] = uigetfile('*','Choose a Redclearpic');
 [grefil,grepat] = uigetfile('*','Choose a Greclearpic');
 [blufil,blupat] = uigetfile('*','Choose a Bluclearpic');
