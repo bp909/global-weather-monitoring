@@ -1,3 +1,4 @@
+% Changes font etc settings for Matlab
 set(groot, 'defaultAxesTickLabelInterpreter','latex');  
 set(groot, 'defaultLegendInterpreter','latex');
 set(0,'defaulttextinterpreter','latex');
