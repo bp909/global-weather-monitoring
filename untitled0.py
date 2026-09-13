@@ -4,6 +4,7 @@ Created on Tue Apr 28 22:18:14 2020
 
 @author: brain
 """
+#Generates an image for the report
 
 import numpy as np
 import numpy.fft as npfft
