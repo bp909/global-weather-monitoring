@@ -1,3 +1,4 @@
+% this script finds corrupted images in the collection by timing how long the image takes to load
 dir_R = uigetdir('E:\Resources\GWM\all_of_it','Choose your Red root folder');
 dir_G = uigetdir('E:\Resources\GWM\all_of_it','Choose your Green root folder');
 dir_B = uigetdir('E:\Resources\GWM\all_of_it','Choose your Blue root folder');
