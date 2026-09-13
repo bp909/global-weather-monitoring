@@ -1,3 +1,5 @@
+% this script uses the images to create cloud free images, and uses those to create a map of the vegetation on the African continent over the period we have images for
+% this had to be ran multiple times in different sections of the images due to RAM limitations
 dir_R = uigetdir('E:\Resources\GWM\all_of_it','Choose your Red root folder');
 dir_G = uigetdir('E:\Resources\GWM\all_of_it','Choose your Green root folder');
 dir_B = uigetdir('E:\Resources\GWM\all_of_it','Choose your Blue root folder');
