@@ -1,3 +1,4 @@
+% Generates images for the report
 RGBday = RGBcreator(colcfi_Rweek09(:,:,3),colcfi_Gweek09(:,:,3),colcfi_Bweek09(:,:,3));
 gg = -NDVIimgsweek09(:,:,3);
 ggn = gg>0;
