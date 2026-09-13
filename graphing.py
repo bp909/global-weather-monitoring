@@ -4,6 +4,7 @@ Created on Sat Apr 25 19:20:32 2020
 
 @author: brain
 """
+# This file plots data and calculates specific values for graphs in the report. Certain parts are commented out to change what graphs are outputted
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
