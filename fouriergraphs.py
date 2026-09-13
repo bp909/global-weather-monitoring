@@ -4,6 +4,7 @@ Created on Mon Apr 27 00:37:31 2020
 
 @author: brain
 """
+# This script loads in the values from the data and fourier transforms it and plots it. When looking at the data it is quite useful to find the frequency to find what affects the vegetation movement
 import numpy as np
 import numpy.fft as npfft
 import matplotlib as mpl
