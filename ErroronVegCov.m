@@ -1,4 +1,4 @@
-
+% this script calculates errors/variance on the veg coverage
 [lmafil,lmapat] = uigetfile('*','Choose a landmask');
 lim_UP = 600;
 lim_LO = 3050;
