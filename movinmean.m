@@ -1,3 +1,5 @@
+% Calculates moving means, plots it and saves it
+
 CloudCov3 = movmean(CloudCov2019, 3);
 CloudCov7 = movmean(CloudCov2019, 7);
 plot(CloudCov3)
