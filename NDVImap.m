@@ -1,3 +1,4 @@
+% Script that concatenates and squashes NDVI images so that they can be tracked north-south in timeseries
 lim_UP = 600;
 lim_LO = 3050;
 lim_RI = 3400;
