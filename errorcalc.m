@@ -1,3 +1,4 @@
+% this calculates the error on the vegetation position
 PosSpr = readmatrix('E:\OneDrive\OneDrive - The University of Nottingham\3rd Year Project\recourses\Summary data\PosAndSpre1.csv');
 
 PosSpr(isnan(PosSpr))=0;
