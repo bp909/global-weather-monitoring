@@ -1,3 +1,4 @@
+% this script produces a graph tracking the average vegetation coverage on the continent
 percentcovtrack = zeros(1, modecount);
 NDVIimgs = zeros([imagesiz_Y imagesiz_X modecount]);
 
