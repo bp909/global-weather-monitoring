@@ -1,3 +1,4 @@
+% This script creates a NDVI image
 [redfil,redpat] = uigetfile('*','Choose a Redclearpic');
 [grefil,grepat] = uigetfile('*','Choose a Greclearpic');
 [lmafil,lmapat] = uigetfile('*','Choose a landmask');
