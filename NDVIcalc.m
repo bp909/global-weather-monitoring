@@ -1,4 +1,5 @@
 function [percentcover, NDVIimg] = NDVIcalc(chan_R, chan_G, chan_L)
+% function that calculates NDVI image and coverage of vegetation
     NDVIimg = (double(chan_R)-double(chan_G))./(double(chan_R)+double(chan_G));
     %imshow(NDVIimg)
     NDVIimg1 = NDVIimg < 0;
